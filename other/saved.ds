@@ -1,0 +1,13 @@
+﻿show("Most Kiszámolom Hogy Te és Margó Összesen Hány Évesek Vagytok!")
+show("") #Elválaszó Vonal
+ask("Nyomj Enter-t A Kezdéshez!")
+
+show("") #Elválaszó Vonal
+user_age = ask("Kérlek Add Meg Az Életkorodat: ")
+margo_age = 62
+
+calculated_num = user_age + margo_age
+show("") #Elválaszó Vonal
+show("Te és Margó Életkora Összesen: "calculated_num" Év Mivel Margó Jelenleg 62 Éves Te Pedig "user_age" Éves Vagy!")
+show("") #Elválaszó Vonal
+ask("Nyomj Enter-t A Kilépéshez")
