@@ -1,0 +1,9 @@
+[package]
+name = "dsharp-wiki"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wry = "0.47"
+winit = "0.30"
+image = "0.25"
