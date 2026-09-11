@@ -1,9 +1,1 @@
-<img width="950" height="2000" alt="New Project (1)" src="https://github.com/user-attachments/assets/4ceaf399-a26c-4e51-9326-fa25d350284d" />
-
-A simple, beginner-friendly
-programming language that compiles to Python 3. Write less, do more.
-
-Use:
-- Get an API key here: [https://console.groq.com/keys](https://console.groq.com/keys)
-- Save it to `api_key.dd`
-- Run the program
+<img width="950" height="2159" alt="dsharplore" src="https://github.com/user-attachments/assets/3c93b15f-e703-4c4f-b825-ad6e73c9b7bc" />
