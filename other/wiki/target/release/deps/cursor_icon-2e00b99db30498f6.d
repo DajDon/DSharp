@@ -1,7 +1,0 @@
-G:\My Drive\Projects\D#\other\wiki\target\release\deps\cursor_icon-2e00b99db30498f6.d: C:\Users\dajdonnn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cursor-icon-1.2.0\src\lib.rs
-
-G:\My Drive\Projects\D#\other\wiki\target\release\deps\libcursor_icon-2e00b99db30498f6.rlib: C:\Users\dajdonnn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cursor-icon-1.2.0\src\lib.rs
-
-G:\My Drive\Projects\D#\other\wiki\target\release\deps\libcursor_icon-2e00b99db30498f6.rmeta: C:\Users\dajdonnn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cursor-icon-1.2.0\src\lib.rs
-
-C:\Users\dajdonnn\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cursor-icon-1.2.0\src\lib.rs:
