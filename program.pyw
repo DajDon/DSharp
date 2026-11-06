@@ -1,13 +1,14 @@
 import customtkinter as ctk
 import customtkinter
 import tkinter as tk
+from tkinter import filedialog
 import requests
 import threading
 import os, sys
 import ctypes
-import webbrowser
 from PIL import Image, ImageTk
 import subprocess
+from groq import Groq
 
 root = ctk.CTk()
 root.title("D# Programing")
@@ -15,7 +16,7 @@ root.geometry("1200x700")
 root.resizable(False, False)
 root.config(bg="#181818")
 
-with open("api_key.dd", "r") as f:
+with open("api_key.txt", "r") as f:
     API_KEY = f.read().strip()
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
@@ -25,6 +26,90 @@ root.iconbitmap("assets/logo.ico")
 
 img = ImageTk.PhotoImage(Image.open("assets/logo.png"))
 root.iconphoto(True, img)   
+
+
+
+
+
+def api():
+    try:
+        r = requests.post(
+            API_URL,
+            headers={"Authorization": f"Bearer {API_KEY}"},
+            json={
+                "model": "openai/gpt-oss-20b",
+                "messages": chat.copy()
+            },
+            timeout=120
+        )
+
+        if not r.ok:
+            raise Exception(r.text)
+
+        code = r.json()["choices"][0]["message"]["content"]
+
+        os.makedirs("other", exist_ok=True)
+        with open("other/output.py", "w", encoding="utf-8") as f:
+            f.write(code)
+
+        print("Compile Success.")
+
+    except Exception as e:
+        print("Error:", e)
+
+
+def send():
+    msg = textbox.get("1.0", "end-1c")
+    if not msg.strip():
+        return
+    chat.append({"role": "user", "content": msg})
+    threading.Thread(target=lambda: api(), daemon=True).start()
+
+def start():
+    subprocess.Popen(["python", "other/output.py"], creationflags=subprocess.CREATE_NEW_CONSOLE)
+
+
+
+
+
+def open_wiki_file():
+    subprocess.Popen(["other/Wiki.exe"])
+
+
+def open_settings_file():
+    subprocess.Popen(["other/settings.exe"])    
+
+default_open_save_folder = "saves"
+ 
+def open_file():
+    open_path = filedialog.askopenfilename(
+        title="Open File",
+        filetypes=[("D# Programing", "*.ds")],
+        initialdir=default_open_save_folder,
+    )
+    if open_path:
+        print (open_path)
+
+        with open(open_path, "r", encoding="utf-8-sig") as openFile:
+            openContent = openFile.read()
+
+        textbox.delete("1.0", "end")
+        textbox.insert("1.0", openContent)  
+
+
+
+def save_output():
+    save_path = filedialog.asksaveasfilename(
+        title="Save File",
+        filetypes=[("D# Programing", "*.ds")],
+        initialdir=default_open_save_folder,
+        defaultextension=".ds"
+    )
+    if save_path:
+        print(save_path)
+        
+        with open(save_path, "w", encoding="utf-8-sig") as f:
+            f.write(textbox.get("1.0", "end"))
 
 textbox = ctk.CTkTextbox(
     root,
@@ -37,53 +122,6 @@ textbox = ctk.CTkTextbox(
     wrap="word"
 )
 textbox.place(x=180, y=25)
-
-
-def api(short_response=False):
-    try:
-        messages = chat.copy()
-        if short_response:
-            messages.append({"role": "system", "content": "Adj rövid, tömör választ (maximum 1 mondat)."})
-        
-        r = requests.post(
-            API_URL,
-            headers={
-                "Authorization": f"Bearer {API_KEY}",
-                "Content-Type": "application/json"
-            },
-            json={"model": "llama-3.3-70b-versatile", "messages": messages}
-        )
-        ai = r.json()["choices"][0]["message"]["content"]
-        chat.append({"role": "assistant", "content": ai})
-        save_output(ai)
-    except Exception as e:
-        save_output(f"Error: {e}")
-
-def send(short_response=False):
-    msg = textbox.get("1.0", "end-1c")
-    if not msg.strip():
-        return
-    chat.append({"role": "user", "content": msg})
-    threading.Thread(target=lambda: api(short_response), daemon=True).start()
-
-def start():
-    subprocess.Popen(["python", "other/output.py"], creationflags=subprocess.CREATE_NEW_CONSOLE)
-
-def save():
-    with open("other/saved.ds", "w", encoding="utf-8-sig", newline="") as file:
-        file.write(textbox.get("1.0", "end-1c"))
-
-def open_file():
-    with open("other/saved.ds", "r", encoding="utf-8-sig") as file:
-        textbox.delete("1.0", "end")        
-        textbox.insert("1.0", file.read()) 
-
-def open_wiki_file():
-    subprocess.Popen(["other/Wiki.exe"])
-
-def save_output(msg):
-    with open("other/output.py", "w", encoding="utf-8") as f:
-        f.write(msg)
 
 options_text = ctk.CTkLabel(
     root,
@@ -106,7 +144,7 @@ compile_button = ctk.CTkButton(
     border_color="white",
     border_width=2,
     font=("Arial", 20),
-    command=lambda: send(short_response=False)
+    command=lambda: send()
 )
 compile_button.place(x=10, y=70) 
 
@@ -138,7 +176,7 @@ save_button = ctk.CTkButton(
     border_color="white",
     border_width=2,
     font=("Arial", 20),
-    command=save
+    command=save_output
 )
 save_button.place(x=10, y=180) 
 
@@ -173,5 +211,21 @@ help_button = ctk.CTkButton(
     command=open_wiki_file
 )
 help_button.place(x=10, y=290) 
+
+settings_button = ctk.CTkButton(
+    root,
+    text="Settings",
+    width=160,
+    height=40,
+    fg_color="#1e1b4b",
+    text_color="white",
+    corner_radius=8,
+    hover_color="#262255",
+    border_color="white",
+    border_width=2,
+    font=("Arial", 20),
+    command=open_settings_file
+)
+settings_button.place(x=10, y=345) 
 
 root.mainloop()
