@@ -1,0 +1,9 @@
+﻿make window "Name Entry" 400x150
+
+add label lbl with "Your name:" at 20, 20
+add entry name_box at 20, 50
+
+add button btn with "Greet" at 20, 80 do =>
+    write name_box with "Hello " + read name_box
+
+start gui
