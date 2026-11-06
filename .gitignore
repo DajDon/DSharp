@@ -1,0 +1,9 @@
+/.vscode/
+/build/
+/dist/
+/versions/
+/api_key.txt
+/program.exe
+/program.spec
+/settings.spec
+/test.pyw

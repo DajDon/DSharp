@@ -1,0 +1,58 @@
+2026-09-22 17:09:08.187: [INFO] CurrentProfilePath: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-09-22 17:09:08.187: [INFO] Profiles total count: 1
+2026-09-22 17:09:08.187: [INFO] Profile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=null
+2026-09-22 17:09:08.187: [INFO] LastUsedProfileDir: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-09-22 17:09:08.187: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 17:09:08.187: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 17:09:08.187: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 17:09:08.187: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 14:01:03.919: [INFO] CurrentProfilePath: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-10-03 14:01:03.919: [INFO] Profiles total count: 1
+2026-10-03 14:01:03.919: [INFO] Profile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-09-22T17:11:01.879Z
+2026-10-03 14:01:03.919: [INFO] LastUsedProfileDir: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-10-03 14:01:03.919: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-09-22T17:11:01.879Z
+2026-10-03 14:01:03.919: [INFO] OnDoneLoading sync enabled: 0
+2026-10-03 14:01:03.919: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-03 14:01:03.919: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-03 14:01:03.919: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 14:01:14.441: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 19:08:03.693: [INFO] CurrentProfilePath: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-10-03 19:08:03.693: [INFO] Profiles total count: 1
+2026-10-03 19:08:03.694: [INFO] Profile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-10-03T19:06:04.955Z
+2026-10-03 19:08:03.694: [INFO] LastUsedProfileDir: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-10-03 19:08:03.694: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-10-03T19:06:04.955Z
+2026-10-03 19:08:03.694: [INFO] OnDoneLoading sync enabled: 0
+2026-10-03 19:08:03.694: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-03 19:08:03.694: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-03 19:08:03.694: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 19:08:06.111: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 19:40:54.465: [INFO] CurrentProfilePath: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-10-03 19:40:54.465: [INFO] Profiles total count: 1
+2026-10-03 19:40:54.465: [INFO] Profile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-10-03T19:17:56.153Z
+2026-10-03 19:40:54.465: [INFO] LastUsedProfileDir: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-10-03 19:40:54.465: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-10-03T19:17:56.153Z
+2026-10-03 19:40:54.465: [INFO] OnDoneLoading sync enabled: 0
+2026-10-03 19:40:54.465: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-03 19:40:54.465: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-03 19:40:54.465: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-03 19:40:59.116: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-06 17:48:37.906: [INFO] CurrentProfilePath: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-11-06 17:48:37.906: [INFO] Profiles total count: 1
+2026-11-06 17:48:37.906: [INFO] Profile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-10-03T19:40:54.655Z
+2026-11-06 17:48:37.906: [INFO] LastUsedProfileDir: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-11-06 17:48:37.906: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-10-03T19:40:54.655Z
+2026-11-06 17:48:37.906: [INFO] OnDoneLoading sync enabled: 0
+2026-11-06 17:48:37.906: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-06 17:48:37.906: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-06 17:48:37.906: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-06 17:48:42.447: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-06 17:59:41.927: [INFO] CurrentProfilePath: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-11-06 17:59:41.927: [INFO] Profiles total count: 1
+2026-11-06 17:59:41.928: [INFO] Profile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-11-06T17:59:35.304Z
+2026-11-06 17:59:41.928: [INFO] LastUsedProfileDir: D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default
+2026-11-06 17:59:41.928: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\Projects\D#\other\Wiki.exe.WebView2\EBWebView\Default lastActive=2026-11-06T17:59:35.304Z
+2026-11-06 17:59:41.928: [INFO] OnDoneLoading sync enabled: 0
+2026-11-06 17:59:41.928: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-06 17:59:41.928: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-06 17:59:41.928: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-06 17:59:48.216: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

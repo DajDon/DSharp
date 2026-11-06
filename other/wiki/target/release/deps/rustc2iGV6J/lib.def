@@ -1,0 +1,4 @@
+LIBRARY
+EXPORTS
+  __rustc_proc_macro_decls_67c38b552905ab1b__ DATA
+  rust_metadata_time_macros_67c38b552905ab1b DATA

@@ -1,0 +1,4 @@
+LIBRARY
+EXPORTS
+  __rustc_proc_macro_decls_ae54cee8c642ce07__ DATA
+  rust_metadata_noop_proc_macro_ae54cee8c642ce07 DATA
