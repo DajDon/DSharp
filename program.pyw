@@ -84,7 +84,7 @@ default_open_save_folder = "saves"
 def open_file():
     open_path = filedialog.askopenfilename(
         title="Open File",
-        filetypes=[("D# Programing", "*.ds")],
+        filetypes=[("D# Programming", "*.ds"), ("All files", "*")],
         initialdir=default_open_save_folder,
     )
     if open_path:
@@ -101,7 +101,7 @@ def open_file():
 def save_output():
     save_path = filedialog.asksaveasfilename(
         title="Save File",
-        filetypes=[("D# Programing", "*.ds")],
+        filetypes=[("D# Programming", "*.ds"), ("All files", "*")],
         initialdir=default_open_save_folder,
         defaultextension=".ds"
     )
